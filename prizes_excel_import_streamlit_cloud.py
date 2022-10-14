@@ -64,9 +64,9 @@ if uploaded_file is not None:
                time.sleep(1)
 
                #input reward code
-               reward_code_cell_obj = "E28068940000"+sh.cell(row=i, column=reward_code_col_num)
+               reward_code_cell_obj = sh.cell(row=i, column=reward_code_col_num)
                reward_code_field = web.find_element("xpath", '/html/body/div/div/main/div/div[2]/div/div/form/div[1]/input')
-               reward_code_field.send_keys(reward_code_cell_obj.value)
+               reward_code_field.send_keys(f"E28068940000{reward_code_cell_obj.value}")
 
                #input corresponding prize name
                prize_name_cell_obj = sh.cell(row=i, column=prize_name_col_num)
