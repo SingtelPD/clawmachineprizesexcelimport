@@ -77,7 +77,7 @@ if uploaded_file is not None:
                submit_button = web.find_element("xpath", '/html/body/div/div/main/div/div[2]/div/div/form/div[8]/input')
                submit_button.click()
                time.sleep(1)
-               st.write(f"Prize code {reward_code_cell_obj.value} - {prize_name_cell_obj.value} has been added to the CMS system")
+               st.write(f"Prize code E28068940000{reward_code_cell_obj.value} - {prize_name_cell_obj.value} has been added to the CMS system")
            except:
                TypeError
                pass
